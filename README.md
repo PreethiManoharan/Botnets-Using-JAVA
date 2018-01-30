@@ -52,12 +52,10 @@ Once connected the master can provide commands to the slaves, as follows:
 *Examples: 
 -rise-fake-url 8585 www.maliciouslink.com*
 
-Upon receiving the rise-fake-url command your bots will all behave like web servers at the specified port number and serve a virtual html page that will link then to two other virtual html pages, and each page will contain a link to the fake url with a text stating very important, key, "check this out!" and a number of keywords that will make anybody looking at it the link is important.
-
 Upon receiving the rise-fake-url command, the bots:
 * behave like web-servers at the specified TargetPort.
 * serve virtual html page that links to two other virtual html pages.
-* each page will contain a link to the fake url with text, "check this out!", which will make anybody looking at the link is improtant.
+* each page will contain a link to the fake url with text, "check this out!", which will make anybody looking at the link to think it is important.
 * So, the crawler will see a binary tree of fake pages, each containing 10 links to the fake url.
 
 7. down-fake-url [TargetPort] [URL]
